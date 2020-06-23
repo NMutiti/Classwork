@@ -1,0 +1,54 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+}
+
+.continer{
+  background: green;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: blue;
+  height:10%;
+}
+
+.footer {
+  background: blue;
+  height:10%;
+}
+
+.middle {
+background: pink;
+height:80%;
+display:flex;
+}
+
+.sidebar {
+  background: red;
+  width:10%;
+}
+
+.content{
+  background: orange;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width:800px)
+{
+  .middle {
+    flex-direction: column
+  }
+
+  .main{
+  }
+}
