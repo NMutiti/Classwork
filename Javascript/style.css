@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body{
+  margin:0;
+}
+
+.menu {
+  position:fixed;
+  padding: 1rem;
+  top:0;
+  right:-200px;
+  width:200px;
+  background: rgb(169, 104, 96);
+  height: 100vh;
+  z-index:99999999999;
+}
+
+
+.button {
+  background: green;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100px;
+  transition: transform .3s ease;
+}
+
+.style {
+  transform: translateX(-200px);
+}
+
+.marquee {
+  /* width: 300px; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  border:3px solid #000;
+  font-style: oblique;
+  font-size: 2rem;
+}
