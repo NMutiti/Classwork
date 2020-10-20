@@ -24,11 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font: serif;
-  font-size: 10em;
-  letter-spacing: -.09em;
-  -webkit-font-smoothing: antialiased;
-  color: orange;
+
 }
 
 /* .grid-item:hover {
@@ -53,6 +49,17 @@ body {
 
 .text {
   display: none;
+  font-family: serif;
+  font-style: italic;
+  font-size: 10em;
+  letter-spacing: -.09em;
+  -webkit-font-smoothing: antialiased;
+  color: orange;
+  text-shadow: 5px 5px 10px rgb(145, 96, 0);
+  -webkit-transform:scale(2,1);
+  background: -webkit-linear-gradient(orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-show {
