@@ -27,6 +27,20 @@ function playSound4() {
       obj.volume = 0.09;
 }
 
+function playSound5() {
+  var obj = document.createElement("audio");
+      obj.src = "assets/sound.m4a";
+      obj.play();
+      obj.volume = 0.09;
+}
+
+function playSound6() {
+  var obj = document.createElement("audio");
+      obj.src = "assets/sound.m4a";
+      obj.play();
+      obj.volume = 0.09;
+}
+
 $( ".item1" ).hover(
   function() {
     $( ".img1" ).addClass( 'img-show' );
@@ -68,5 +82,27 @@ $( ".item4" ).hover(
   }, function() {
     $( ".img4" ).removeClass( 'img-show' );
     $( ".text4" ).removeClass( 'text-show' );
+  }
+);
+
+$( ".item5" ).hover(
+  function() {
+    $( ".img5" ).addClass( 'img-show' );
+    $( ".text5" ).addClass( 'text-show' );
+    playSound5();
+  }, function() {
+    $( ".img5" ).removeClass( 'img-show' );
+    $( ".text5" ).removeClass( 'text-show' );
+  }
+);
+
+$( ".item6" ).hover(
+  function() {
+    $( ".img6" ).addClass( 'img-show' );
+    $( ".text6" ).addClass( 'text-show' );
+    playSound6();
+  }, function() {
+    $( ".img6" ).removeClass( 'img-show' );
+    $( ".text6" ).removeClass( 'text-show' );
   }
 );
