@@ -45,7 +45,7 @@ $( ".item1" ).hover(
   function() {
     $( ".img1" ).addClass( 'img-show' );
     $( ".text1" ).addClass( 'text-show' );
-    playSound1();
+    playSound2();
   }, function() {
     $( ".img1" ).removeClass( 'img-show' );
     $( ".text1" ).removeClass( 'text-show' );
