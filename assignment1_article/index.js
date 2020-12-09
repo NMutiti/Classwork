@@ -1,4 +1,3 @@
-// A / A-a / A-a-a / Hai-a
 function playSound1() {
   var obj = document.createElement("audio");
       obj.src = "assets/sound.m4a";
@@ -68,5 +67,27 @@ $( ".item4" ).hover(
   }, function() {
     $( ".img4" ).removeClass( 'img-show' );
     $( ".text4" ).removeClass( 'text-show' );
+  }
+);
+
+$( ".item5" ).hover(
+  function() {
+    $( ".img5" ).addClass( 'img-show' );
+    $( ".text5" ).addClass( 'text-show' );
+    playSound4();
+  }, function() {
+    $( ".img5" ).removeClass( 'img-show' );
+    $( ".text5" ).removeClass( 'text-show' );
+  }
+);
+
+$( ".item6" ).hover(
+  function() {
+    $( ".img6" ).addClass( 'img-show' );
+    $( ".text6" ).addClass( 'text-show' );
+    playSound4();
+  }, function() {
+    $( ".img6" ).removeClass( 'img-show' );
+    $( ".text6" ).removeClass( 'text-show' );
   }
 );

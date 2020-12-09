@@ -2,168 +2,93 @@
   box-sizing: border-box;
 }
 
-/* Sections
-   ========================================================================== */
 body {
-  margin: 0;
-  font-family: halyard-text, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 28px;
-  letter-spacing: -.04em;
-  -webkit-text-size-adjust: 100%;
-  line-height: 1.2em;
+  margin: 0px;
+  padding: 0px;
   background: yellow;
-  color: red;
 }
 
-article,
-aside,
-footer,
-header,
-nav,
-section {
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+
+.grid-item {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: none;
+  font-family: serif;
+  font-style: italic;
+  font-size: 12em;
+  letter-spacing: -.09em;
+  -webkit-font-smoothing: antialiased;
+  /* color: red; */
+  /* text-shadow: 5px 5px 10px red; */
+  /* -webkit-transform:scale(1,2); */
+  background: -webkit-linear-gradient(rgb(252, 0, 0), yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .text1 {
+  transform: skew(-15deg, -15deg);
+}
+.text2 {
+  transform: skew(15deg, 15deg);
+}
+.text3 {
+  transform: skew(15deg, 15deg);
+}
+.text4 {
+  transform: skew(-15deg, -15deg);
+} */
+
+.text-show {
   display: block;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-img {
-  border-style: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/* Hidden
-   ========================================================================== */
-[hidden] {
-  display: none;
-}
-
-.one, .two, .three, .treeone, .treetwo, .treethree {
+.img-item {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  transform: scale(1);
-  transform-origin: center;
-  -webkit-transform-origin: center;
-  -webkit-transition: 0s ease-in-out;
-  -moz-transition: 0s ease-in-out;
-  -o-transition: 0s ease-in-out;
-  cursor: pointer;
-}
-
-.one {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.two {
-  transform: scale(0.125);
-  opacity: 1;
-}
-
-.three {
-  transform: scale(0.015625);
-  opacity: 0;
-}
-
-.treeone {
-  transform: scale(1);
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display:none;
   pointer-events: none;
-  opacity: 1;
+
+  width:100vw;
+  height:100vh;
+  background-repeat:repeat;
+  background-size:80%;
 }
 
-.treetwo {
-  transform: scale(0.125);
-  pointer-events: none;
-  opacity: 1;
+.img1 {
+  background-image: url('assets/PainRevisited10.png');
 }
 
-.treethree {
-  transform: scale(0.015625);
-  pointer-events: none;
-  opacity: 0;
+.img2 {
+  background-image: url('assets/PainRevisited11.png');
 }
 
-.zoomone, .zoomtwo, .zoomthree {
-  -webkit-transition: 3.5s ease-in-out;
-  -moz-transition: 3.5s ease-in-out;
-  -o-transition: 3.5s ease-in-out;
+.img3 {
+  background-image: url('assets/PainRevisited12.png');
 }
 
-.zoomone {
-  transform: scale(8);
-  opacity: 0;
-  pointer-events: none;
+.img4 {
+  background-image: url('assets/PainRevisited13.png');
 }
 
-.zoomtwo {
-  transform: scale(1);
-}
-
-.zoomthree {
-  transform: scale(0.125);
-  opacity: 1;
-}
-
-#story-wrap {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#story {
-  z-index: 9999999;
-  width: 100%;
-  pointer-events: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  padding: 12px 18px;
-  display: inline-block;
-  transform: translate(-50%, -50%);
-  margin: auto;
-  text-align: center;
-}
-
-#story p {
-  margin: 0 auto;
-  text-align: center;
-  display: inline;
+.img-show {
+  display:block;
 }

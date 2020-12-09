@@ -14,34 +14,46 @@
 
   <script src="js/jquery.min.js"></script>
 
+  <script>
+    $(function() {
+      $(".draggable").draggable();
+    });
+  </script>
+
 </head>
 
 <body>
 
-  <div id="story-wrap">
-      <div id="story">
-        <p> &nbsp; </p>
-      </div>
+  <div class="grid">
 
-      <img class="three" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
-        <g id="Artboard_1" data-name="Artboard 1">
-          <image x="569" y="36" width="831" height="965"
-            xlink:href="assets/63.png" />
-        </g>
-      </svg>
-      <img class="two" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
-        <g id="Artboard_1" data-name="Artboard 1">
-          <image x="569" y="36" width="831" height="965"
-            xlink:href="assets/63.png" />
-        </g>
-      </svg>
-      <img class="one" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
-        <g id="Artboard_1" data-name="Artboard 1">
-          <image x="569" y="36" width="831" height="965"
-            xlink:href="assets/63.png" />
-        </g>
-      </svg>
+    <div class="grid-item item1">
+      <div class="text text1">A</div>
     </div>
+    <div class="grid-item item2">
+      <div class="text text2">A-a</div>
+    </div>
+    <div class="grid-item item3">
+      <div class="text text3">A-a-a</div>
+    </div>
+    <div class="grid-item item4">
+      <div class="text text4">Hai-a</div>
+    </div>
+
+  </div>
+
+  <!-- <div class="image-wrap">
+    <img class="img-item img1" src="assets/PainRevisited10.png">
+    <img class="img-item img2" src="assets/PainRevisited11.png">
+    <img class="img-item img3" src="assets/PainRevisited12.png">
+    <img class="img-item img4" src="assets/PainRevisited13.png">
+  </div> -->
+
+  <div class="image-wrap">
+    <div class="img-item img1"></div>
+    <div class="img-item img2"></div>
+    <div class="img-item img3"></div>
+    <div class="img-item img4"></div>
+  </div>
 
 </body>
 
